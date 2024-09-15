@@ -1,0 +1,257 @@
+/* Reset de estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    margin: 20px 0;
+}
+
+#inicio {
+    background: #e0e0e0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#inicio .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#soluciones {
+    background: #fff;
+    padding: 20px;
+}
+
+.solucion {
+    background: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#contacto {
+    background: #e0e0e0;
+    padding: 20px;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto label {
+    margin-bottom: 10px;
+}
+
+#contacto input, #contacto textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+/* Sección de Energías Renovables */
+#renovables {
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+#renovables h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#renovables ul {
+    list-style: none;
+    padding: 0;
+}
+
+#renovables ul li {
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+/* Sección de Preguntas para Optimización */
+#optimizacion {
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#optimizacion form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#optimizacion form label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+#optimizacion form select, 
+#optimizacion form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#optimizacion form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#optimizacion form button:hover {
+    background-color: #555;
+}
+
+/* Estilos del chatbot */
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#chat-icon {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#chat-window {
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-window.hidden {
+    display: none;
+}
+
+#chat-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chat-messages {
+    height: 200px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#chat-input {
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilos para el formulario */
+#formulario-estudio {
+    padding: 30px;
+    text-align: center;
+}
+
+#formulario-estudio form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#formulario-estudio label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+#formulario-estudio input, #formulario-estudio textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formulario-estudio input[type="file"] {
+    padding: 5px;
+}
+
+#formulario-estudio button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#formulario-estudio button:hover {
+    background-color: #555;
+}
