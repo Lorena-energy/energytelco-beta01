@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnergyTelco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header>
+        <div class="logo">
+            <h1>EnergyTelco</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="asesoria-energetica.html">Asesoría Energética</a></li> <!-- Enlace a la nueva página -->
+                <li><a href="comparador.html">Comparador</a></li> <!-- Enlace a la nueva página -->
+                <li><a href="renovables.html">Energías Renovables</a></li> <!-- Enlace a la nueva página -->
+                <li><a href="tienda.html">Tienda</a></li> <!-- Enlace a la nueva página -->
+                <li><a href="#contacto">Contacto</a></li> <!-- Enlace a la sección de contacto -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal de bienvenida -->
+    <section id="inicio">
+        <h2>Elimina la complejidad del mercado energético</h2>
+        <p>EnergyTelco simplifica la gestión de la energía, eliminando la inacción y fragmentación del mercado.</p>
+        <a href="soluciones.html" class="btn">Descubre nuestras soluciones</a>
+    </section>
+
+    <!-- Sección de Beneficios -->
+    <section id="beneficios">
+        <h2>¿Por qué elegir EnergyTelco?</h2>
+        <ul>
+            <li>🔧 <strong>Optimización energética:</strong> Ahorra en costos y maximiza la eficiencia.</li>
+            <li>📊 <strong>Consultoría personalizada:</strong> Recibe asesoramiento adaptado a tus necesidades.</li>
+            <li>💡 <strong>Innovación tecnológica:</strong> Simplificamos la complejidad del mercado con tecnología avanzada.</li>
+        </ul>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonial">
+            <p>"EnergyTelco nos ha ayudado a reducir los costos energéticos en un 20%. ¡Una plataforma increíble!"</p>
+            <p>- Cliente satisfecho</p>
+        </div>
+        <div class="testimonial">
+            <p>"Gracias a la optimización de EnergyTelco, hemos logrado ser más eficientes en nuestro consumo energético."</p>
+            <p>- Empresa XYZ</p>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas? ¡Contáctanos!</p>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tipo">Tipo de consulta:</label>
+            <select id="tipo" name="tipo">
+                <option value="general">Consulta general</option>
+                <option value="soporte">Soporte técnico</option>
+                <option value="ventas">Consultas sobre ventas</option>
+            </select>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label for="notificaciones">
+                <input type="checkbox" id="notificaciones" name="notificaciones">
+                Deseo recibir notificaciones y actualizaciones por correo electrónico.
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección sobre Energías Renovables en index.html -->
+<section id="renovables-intro">
+    <h2>Energías Renovables</h2>
+    <p>Descubre nuestras soluciones innovadoras para aprovechar la energía solar, eólica, biomasa y más. Ayudamos a tu empresa o hogar a ser más eficiente y sostenible.</p>
+    <a href="renovables.html" class="btn">Conoce más</a>
+</section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 EnergyTelco. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlace al script -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Chatbot flotante -->
+<div id="chatbot">
+    <div id="chat-icon" onclick="toggleChat()">
+        💬
+    </div>
+    <div id="chat-window" class="hidden">
+        <div id="chat-header">
+            <h3>Asistente EnergyTelco</h3>
+            <button onclick="toggleChat()">X</button>
+        </div>
+        <div id="chat-messages">
+            <!-- Mensajes del chatbot aparecerán aquí -->
+        </div>
+        <input type="text" id="chat-input" placeholder="Escribe tu mensaje..." onkeydown="handleChat(event)">
+    </div>
+</div>
